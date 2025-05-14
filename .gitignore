@@ -1,0 +1,36 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Common (루트 공통)
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# 환경 변수 파일 (백엔드/프론트엔드 공통)
+.env
+.env.*
+!.env.example
+
+
+# 📁 backend
+/backend/node_modules/
+/backend/sessions/
+/backend/*.env*
+/backend/*.sqlite
+/backend/*.log
+
+
+# 📁 frontend
+/frontend/node_modules/
+/frontend/build/
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/coverage/
+/frontend/*.env*
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/*.log
