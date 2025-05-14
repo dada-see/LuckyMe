@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.disabled{
+    color: #aaa;
+}
+.selected{
+    color: red;
+    background-image: url(/public/favicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.today{
+    background-color: aquamarine;
+}
+.valid{
+    font-weight: 700;
+}
+/* 헤더 */
+.CalendarHeader{
+    position: relative;
+}
+
+.CalendarHeader .title{
+    text-align: center;
+}
+
+.CalendarHeader .changeMonth span{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.CalendarHeader .changeMonth .left{
+    left: 0;
+}
+
+.CalendarHeader .changeMonth .right{
+    right: 0;
+}
+/* 요일 */
+.Calendar .days{
+    display: flex;
+    justify-content: space-between;
+}
+/* 날짜 */
+.CalendarBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+.CalendarBody div{
+    display: flex;
+}
